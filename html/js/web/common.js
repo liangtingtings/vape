@@ -29,7 +29,7 @@ $.fn.loadImage=function() {
     var src = $(this).attr("src")
     var img = new Image();
     var loadheight=$(this).height()+"px";
-    var loadwidth=$(this).width()+"px"
+    var loadwidth=$(this).width()+"px";
     img.src = src;
 
     $(this).attr("src", "");
@@ -51,9 +51,7 @@ $.fn.loadImage=function() {
         }
     }
 }
-$("img").each(function(img){
-    img.loadImage();
-})
+
 //video openWindow
 $.fn.videoWindow=function(url) {
     $("header,main,footer").addClass("blur")
@@ -105,15 +103,8 @@ $(function() {
         }
     })
     }
-    
-     $("body").click(function(e){
-        if ( e && e.preventDefault ) 
-            e.preventDefault(); 
-        //IE中阻止函数器默认动作的方式 
-        else
-            window.event.returnValue = false; 
-        return false; 
-     })
+
+   
     console.log(navigator.userAgent)
     if(navigator.userAgent.indexOf("MSIE")>0){   
         if(navigator.userAgent.indexOf("MSIE 6.0")>0){   

@@ -17,6 +17,10 @@
 <script>
 $(function () {
     $(".product-detail-wrapper").bannerRoll(".swiper-product", ".pagination")
+    $("img").each(function(img){
+        $(this).loadImage();
+    })
+        
 })
 </script>
 <body>
