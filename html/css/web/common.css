@@ -568,7 +568,6 @@ textarea.form-control{height:100px}
 	min-width: 120px;
 	max-width: 250px;
 	display: block;
-	margin: 1em;
 	padding: 1em 1em;
 	border: none;
 	background: #00B5F4;
@@ -638,7 +637,7 @@ textarea.form-control{height:100px}
 
 .button--wayra {
 	overflow: hidden;
-	width: 178px;
+	width: 144px;
 	-webkit-transition: border-color 0.3s, color 0.3s;
 	transition: border-color 0.3s, color 0.3s;
 	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -650,9 +649,9 @@ textarea.form-control{height:100px}
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 150%;
+	width: 170%;
 	height: 100%;
-	background:#0088B7 ;
+	background:#0088B7;
 	z-index: -1;
 	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
 	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
@@ -681,4 +680,8 @@ textarea.form-control{height:100px}
 .button--wayra.button--inverted:hover::before {
 	background-color: #0088B7;
 }
-.box-size{width:192px;margin:0 auto}
+.box-size{width:144px;margin:0 auto;height:50px;}
+.footer .box-size{float:left;}
+.footer .button--wayra::before{width: 250%;}
+.footer .button--wayra{width:120px}
+.footer .button--wayra::before{background: #D7721C}
