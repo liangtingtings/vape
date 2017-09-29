@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0"/>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<title>VAPEONLY</title>
+<link href="http://www.vapeonly.com/css/jquery.datetimepicker.css" type="text/css" rel="stylesheet">
+<link href="css/web/common.css" type="text/css" rel="stylesheet" />
+<link href="css/web/idangerous.swiper.css" type="text/css" rel="stylesheet" />
+<link href="css/web/icon.css" type="text/css" rel="stylesheet" />
+<link rel="stylesheet" href="js/web/laydate/theme/default/laydate.css">
+<link href="js/web/search/jquery.searchableSelect.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/web/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/web/common.js"></script>
+<script src="js/web/laydate/laydate.js"></script>
+<script src="js/web/search/jquery.searchableSelect.js"></script>
+
+</head>
+<script>
+    $(function () {
+        //时间插件
+        // $('#datetimepicker').datetimepicker();
+        // $('#datetimepicker9').datetimepicker({
+        //     onGenerate:function( ct ){
+        //         $(this).find('.xdsoft_date.xdsoft_weekend')
+        //             .addClass('xdsoft_disabled');
+        //     },
+        //     weekends:['01.01.2014','02.01.2014','03.01.2014','04.01.2014','05.01.2014','06.01.2014'],
+        //     timepicker:false
+        // });
+
+        var country = ['111','3333','2222','555'];
+        for(var i = 0;i < country.length; i++) {
+            
+            $("#searchInput").append("<option value='"+i+"'>"+country[i]+"</option>");
+        }
+        $('#searchInput').searchableSelect();
+        laydate.render({
+            elem: '#datetimepicker9' //指定元素
+        });
+    })
+</script>
+<body>
+    <header class="public-header clearfix transition4">
+        <div class="header-m">
+        <a class="logo"></a>
+        <nav class="top-nav">
+            <ul>
+                <li>
+                    <div class="top-nav-button">
+                        <a href="#">ABOUT<i class="icon-down"></i></a>
+                        <ul class="top-dropmenu transition-sp3">
+                            <li><a href="#">About Us</a><em>/</em></li>
+                            <li><a href="#">News</a><em>/</em></li>
+                            <li><a href="#">Honors</a></li>
+                        </ul>
+                        <div class="top-nav-bg transition-sp3"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top-nav-button">
+                    <a  href="#">PRODUCT<i class="icon-down"></i></a>
+                    <ul class="top-dropmenu transition-sp3">
+                        <li><a href="#">All</a><em>/</em></li>
+                        <li><a href="#">Kit</a><em>/</em></li>
+                        <li><a href="#">Mod</a><em>/</em></li>
+                        <li><a href="#">Atomizer</a><em>/</em></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                    <div class="top-nav-bg transition-sp3"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="top-nav-button">
+                    <a  href="#">SUPPORT<i class="icon-down"></i></a>
+                    <ul class="top-dropmenu transition-sp3">
+                        <li><a href="#">Product Support</a><em>/</em></li>
+                        <li><a href="#">Feedback</a><em>/</em></li>
+                        <li><a href="#">Security Code</a></li>
+                    </ul>
+                     <div class="top-nav-bg transition-sp3"></div>
+                    </div>
+                </li>
+                <li><div class="top-nav-button"><a  href="#">VIDEO</a></div></li>
+                <li><div class="top-nav-button"><a  href="#">CONTACT</a></div></li>
+            </ul>
+        </nav>
+        </div>
+    
+    </header>
+<main class="transition4">
+    <div class="feedback-box">
+        <div class="feedback-banner"></div>
+        <h1>Customer Feedback</h1>
+        <p class="c-lang">Language:<a href="#" class="focus">English</a><a href="#q1">Japanese</a></p>
+        <div class="lan">
+            <form class="form-horizontal">
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Name:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Email:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                    <div class="error-tips">dadada daa dada1da d ad a da d asd</div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Telephone:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-2 banner_list_icons">
+                        <label class="control-label">*Country:</label>
+                        <select class="form-control banner_list_icon" id="searchInput">　
+                            <option>Please select</option>
+                        </select>
+                    </div>
+                    <div class="form-col-2 banner_list_icons">
+                        <label class="control-label">*Area:</label>
+                        <select class="form-control banner_list_icon">
+                            <option>Please select</option>
+                        </select>
+                    </div>
+                </div>
+               
+                <div class="form-group clearfix">
+                    <label class="control-label">*Product Name:</label>
+                    <div class="form-col-1">
+                        <!-- <select class="form-control">
+                            <option>Please select</option>
+                            <option>vPipe</option>
+                            <option>vCat</option>
+
+                        </select> -->
+                        <div class="form-col-2 banner_list_icons">
+                            <select class="form-control banner_list_icon">
+                                <option>Please select</option>
+                            </select>
+                        </div>
+                        <div class="form-col-2 banner_list_icons">
+                            <select class="form-control banner_list_icon">
+                                <option>Please select</option>
+                                <option>vPipe II </option>
+                                <option>vPipe II </option>
+                                <option>vPipe III</option>
+                            </select>
+                        </div>
+                        <!-- <select class="mt-10 form-control">
+                            <option>vPipe II </option>
+                            <option>vPipe II </option>
+                            <option>vPipe III</option>
+                        </select> -->
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-2">
+                        <label class="control-label">*Purchase Store Name:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                    <div class="form-col-2">
+                        <label class="control-label">*Purchase Date:</label>
+                        <input type="text" id="datetimepicker9" name="date" placeholder="" class="form-control">
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Description:  <span class="des-detail">Please write the problem details as much as possible.</span></label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Warranty Card:<br><span class="des-detail">Please attach an image of the Warranty Card that shows the serial number. (file size ＜ 3M)</span></label>
+                        <div class="file-list">
+                            <span class="icon-close"></span>
+                        </div>
+                        <div class="mgs-btn"><div class="feedback-btn">Change file<input type="file" class="change" /></div></div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Warranty Card:<br><span class="des-detail">Please attach an image of the Warranty Card that shows the serial number. (file size ＜ 3M)</span></label>
+                        
+                        <div class="mgs-btn clearfix"><div class="feedback-btn">Change file<input type="file" class="change" /></div><span class="nofile">No file selected</span></div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">Warranty Card:<br><span class="des-detail">Please attach an image of the Warranty Card that shows the serial number. (file size ＜ 3M)</span></label>
+                        
+                        <div class="mgs-btn clearfix"><div class="feedback-btn">Change file<input type="file" class="change" /></div><span class="nofile">No file selected</span></div>
+                    </div>
+                </div>
+                <!-- <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Purchase Date:</label>
+                        <input type="text" placeholder="" class="form-control" />
+                    </div>
+                </div> -->
+                <!-- <div class="form-group clearfix">
+                    <div class="form-col-1">
+                        <label class="control-label">*Upload Attachment:</label>
+                        <input type="file" class="form-file" />
+                    </div>
+                </div> -->
+                
+                <div class="form-group clearfix marginbtn">
+                    <div class="form-col-1">
+                        <button class="btn-orange" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="lan">
+            
+        </div>
+    </div>
+</main>
+<footer class="footer transition4">
+    <div class="contact-box clearfix">
+        <div class="title" id="floor6">Contact</div>
+        <div class="subscribe-box">
+            <p>Never miss another new product information.<br>
+                We’ll deliver the latest product trends and industry news straight to your inbox</p>
+            <div class="subscribe-inputgroup clearfix">
+                <input placeholder="Your email" type="text">
+                <button type="button">subscribe</button>
+            </div>
+        </div>
+        <div class="tel-box">
+            <i class="icon-tel"></i>
+            <ul>
+                <li>Tel: 400-888-8888</li>
+                <li>Mobile: +86 13916890531</li>
+                <li>Email: business@vapeonly.com`</li>
+            </ul>
+        </div>
+        <div class="share-box">
+            <i class="icon-share"></i>
+            <ul>
+                <li>Follow Us On Social Networks</li>
+                <li><a class="icon-fb"></a><a class="icon-twitter"></a><a class="icon-google"></a><a class="icon-youtube"></a> </li>
+            </ul>
+        </div>
+        <div class="share-location">
+            <i class="icon-location"></i>
+            <ul>
+                <li>Follow Us On Social Networks</li>
+                <li>Add:  Building 10, Xin Xing Industrial Park,Gong Ye Road, Fu YongTown, Shenzhen,China</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bottom-c clearfix">
+            <dl class="warning">
+                <dt>Warning</dt>
+                <dd><p>Please keep our products out of reach of children. Our products are only intended for committed smokers of legal smoking age and not recommended for use by young people, non-smokers, pregnant or breast-feeding women, or persons who are allergic or sensitive to nicotine as our products may be used with E-liquid that contains nicotine and nicotine is an addictive chemical. For people with adverse reaction after using our products, it is recommended to use the e-juice with lower nicotine content or no nicotine.
+                </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>ABOUT</dt>
+                <dd>About Us</dd>
+                <dd>News</dd>
+                <dd>Privacy Policy</dd>
+                <dd>Terms & Conditions</dd>
+            </dl>
+            <dl>
+                <dt>PRODUCTS</dt>
+                <dd>Kit</dd>
+                <dd>Mod</dd>
+                <dd>Atomizer</dd>
+                <dd>Accessories</dd>
+            </dl>
+            <dl>
+                <dt>SUPPORT</dt>
+                <dd>Feedback</dd>
+                <dd>Manuals</dd>
+                <dd>Firmwares</dd>
+            </dl>
+            <dl>
+                <dt>REVIEW</dt>
+                <dd>Video Review</dd>
+            </dl>
+            <div class="bottom-logo">
+                <i class="logo"></i>
+                <p>Copyright ©  vapeonly. All rights reserved
+                </p>
+            </div>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
