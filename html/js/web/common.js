@@ -25,6 +25,7 @@ $.fn.bannerRoll=function(obj,pagination) {
 }
 
 $.fn.loadImage=function() {
+    
     var t = $(this);
     var src = $(this).attr("src")
     var img = new Image();
@@ -36,21 +37,25 @@ $.fn.loadImage=function() {
     var loading =  $("<div style='height:"+loadheight+";width:"+loadwidth+"' class='loading-gray' ><span><em></em></span></div>");
     var loadingfailed =  $("<div style='height:"+loadheight+";width:"+loadwidth+"'  class='loading-gray' ><span><em class='loading-failed'></em></span></div>");
     t.hide();
-
+    t.parent().removeClass('pro-large-size');
     if($(this).parent().find(".loading-gray").length<1){
+
         t.after(loading);
 
         img.onload=function(){
+            t.parent().removeClass('pro-large-size');
             loading.remove();
             t.attr("src", this.src);
             t.show();
         }
         img.onerror=function(){
+            t.parent().addClass('pro-large-size');
             loading.remove();
             t.after(loadingfailed);
         }
     }
 }
+
 
 //video openWindow
 $.fn.videoWindow=function(url) {

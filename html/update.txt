@@ -1,4 +1,10 @@
-1. video.html
-操作：箭头动效去掉
-改后版本
-<li class="pro-video"><a><i class="icon-play transition-sp2"></i><img video-url="https://www.youtube.com/embed/tT_p5jMrJgc" src="images/web/products/video-1.jpg"> </a><p>vAres Review by Choo Choo Vapes</p><div class="pro-btn"></div></li>
+问题:
+
+首页
+1. 首页logo链接  
+   首页所有more链接跳转 
+   首页news部分的链接
+
+2. feedback日文如果选中，area  select框自动填成日文
+
+
