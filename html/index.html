@@ -14,11 +14,13 @@
 <link href="css/web/idangerous.swiper.css" type="text/css" rel="stylesheet" />
 <link href="css/web/icon.css" type="text/css" rel="stylesheet" />
 <script type="text/javascript" src="js/web/jquery-3.2.1.min.js"></script>
+<script src="js/web/jquery-browser.js"></script>
 <script type="text/javascript" src="js/web/idangerous.swiper.min.js"></script>
 <script type="text/javascript" src="js/web/common.js"></script>
 </head>
 <script>
     $(function () {
+       
         $(".banner-wrapper").bannerRoll(".swiper-banner",".pagination");
         $(".news-floor").bannerRoll(".swiper-news",".pagination2");
         $(".comments-wrapper").bannerRoll(".swiper-comments",".pagination3");
@@ -40,6 +42,14 @@
                 }
             });
         })
+        $(".top-nav-button a").each(function(){ 
+            
+            $this = $(this); 
+            if($this[0].href==String(window.location)){ 
+                $this.addClass("hover"); 
+            } 
+        }); 
+        
     })
 </script>
 <body>
@@ -50,7 +60,7 @@
         <ul>
             <li>
                 <div class="top-nav-button">
-                    <a href="#">ABOUT<i class="icon-down transition1"></i></a>
+                    <a href="about.html">ABOUT<i class="icon-down transition1"></i></a>
                     <ul class="top-dropmenu transition-sp3">
                         <li><a href="#">About Us</a><em>/</em></li>
                         <li><a href="#">News</a></li>
@@ -60,13 +70,13 @@
             </li>
             <li>
                 <div class="top-nav-button">
-                <a  href="#">PRODUCT<i class="icon-down transition1"></i></a>
+                <a  href="products.html">PRODUCT<i class="icon-down transition1"></i></a>
                 <ul class="top-dropmenu transition-sp3">
-                    <li><a href="#">All</a><em>/</em></li>
-                    <li><a href="#">Kit</a><em>/</em></li>
-                    <li><a href="#">Mod</a><em>/</em></li>
-                    <li><a href="#">Atomizer</a><em>/</em></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="products.html?id=1">All</a><em>/</em></li>
+                    <li><a href="products.html?id=4">Kit</a><em>/</em></li>
+                    <li><a href="products.html?id=6">Mod</a><em>/</em></li>
+                    <li><a href="products.html?id=3">Atomizer</a><em>/</em></li>
+                    <li><a href="products.html?id=8">Accessories</a></li>
                 </ul>
                 <div class="top-nav-bg transition-sp3"></div>
                 </div>
@@ -74,7 +84,7 @@
             </li>
             <li>
                 <div class="top-nav-button">
-                <a  href="#">SUPPORT<i class="icon-down transition1"></i></a>
+                <a  href="support.html">SUPPORT<i class="icon-down transition1"></i></a>
                 <ul class="top-dropmenu transition-sp3">
                     <li><a href="#">Product Support</a><em>/</em></li>
                     <li><a href="#">Feedback</a><em>/</em></li>
@@ -83,8 +93,8 @@
                  <div class="top-nav-bg transition-sp3"></div>
                 </div>
             </li>
-            <li><div class="top-nav-button"><a  href="#">VIDEO</a></div></li>
-            <li><div class="top-nav-button"><a  href="#">CONTACT</a></div></li>
+            <li><div class="top-nav-button"><a  href="video.html">VIDEO</a></div></li>
+            <li><div class="top-nav-button"><a  href="contact.html">CONTACT</a></div></li>
         </ul>
     </nav>
     </div>
@@ -281,7 +291,7 @@
             </ul>
         </div>
         <div class="share-box">
-            <i class="icon-share"></i>
+            <i class="icon-Social-Networks"></i>
             <div class="addthis_inline_share_toolbox share" data-url="www.vapeonly.com" data-title="vapeonly" data-description="vapeonly" data-media="vapeonly"></div>
             
             <ul>

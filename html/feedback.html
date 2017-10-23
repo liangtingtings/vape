@@ -18,9 +18,18 @@
 <script src="js/web/laydate/laydate.js"></script>
 <script src="js/web/search/jquery.searchableSelect.js"></script>
 
+
 </head>
 <script>
     $(function () {
+        // $(".box-size").click(function(){
+        //     layer.open({
+        //         title: '在线调试',
+        //         content: '可以填写任意的layer代码'
+        //     }); 
+        // })
+        
+        $(".showlayer").layerWindow();
         //时间插件
         // $('#datetimepicker').datetimepicker();
         // $('#datetimepicker9').datetimepicker({
@@ -91,7 +100,7 @@
         </div>
     
     </header>
-<main class="transition4">
+<main class="transition4 blur">
     <div class="feedback-box">
         <div class="feedback-banner"></div>
         <h1>Customer Feedback</h1>
@@ -219,7 +228,7 @@
                     <div class="form-col-1">
                         <!-- <button class="btn-orange" type="button">Subscribe</button> -->
                         <div class="bg-2 box-size">
-                            <button class="button-styl button--wayra button--size-s">Subscribe</button>
+                            <button class="button-styl button--wayra button--size-s">submit</button>
                         </div>
                     </div>
                 </div>
@@ -304,5 +313,71 @@
     </div>
     </div>
 </footer>
+<div class="showlayer">
+    <div class="privacy-box">
+        <div class="layerbox-title">VapeOnly Customer Service</div>
+        <h3>Before consultation</h3>
+        <p>Please click on the link below to send a consultation to the customer service center and 24-hour service is provided.<br>The customer service center will answer your questions as soon as possible. Please wait before this.</p><br>
+        <h3>Product maintenance, failure and other related advisory services</h3>
+        <h4>Free repair, returned products</h4>
+        <p>
+            <ul>
+                <li>
+                    1. Non-consumable products are required during the warranty period (within 90 days of purchase date).
+                </li>
+                <li>
+                    2. Non-consumable products are required during the warranty period (within 90 days of purchase date).
+                </li>
+                <li>
+                    3. Require warranty card.
+                </li>
+                <li>
+                    4. It is necessary to provide a receipt for the purchase of the store and the purchase date, or to provide the goods delivery documents.
+                </li>
+            </ul>
+        </p><br>
+        <h3>Non-free maintenance, returned products</h3>
+        <p>
+            If you meet one of the following conditions,we can not provide free maintenance, Returns and other services.
+        </p> 
+        <p>
+            <ul>
+                <li>
+                    1. The faulty product can not be confirmed.
+                </li>
+                <li>
+                    2. Product carton, instruction manual or attached products are defective.
+                </li>
+                <li>
+                    3. The product is returned by oneself without contacting VapeOnly customer service center.
+                </li>
+                <li>
+                    4. Failure problems or parts defects caused by user self-modification, disassembly or soaking in the water.
+                </li>
+                <li>
+                    5. Not the purchaser who made the maintenance, return policy requirements.
+                </li>
+                <li>
+                    6. Only the box is damaged, but the product itself has no any problems.
+                </li>
+            </ul>
+        </p><br>
+        <h3>Warranty card image Provided</h3>
+        <p>
+            If you meet one of the following conditions,we can not provide free maintenance, Returns and other services.
+        </p>
+        <p>Please scratch the silver part and take a clear picture of the product serial number.
+        Please add the picture in fault form of the customer service center</p>
+        <img src="images/web/priimage.png" alt="">
+        <h3>Failure Form Instructions</h3>
+        <p>
+            Please fill in the failure form with the defective product name, pictures or other descriptions in details, so we can help you quickly identify and deal with the the problems you encounter.
+        </p>
+        <p>
+            Go to the inquiry form (link: http://www.vapeonly.com/support/feedback/)
+        </p>
+    </div>
+</div>
+
 </body>
 </html>

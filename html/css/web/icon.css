@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?302lgq');
-  src:  url('fonts/icomoon.eot?302lgq#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?302lgq') format('truetype'),
-    url('fonts/icomoon.woff?302lgq') format('woff'),
-    url('fonts/icomoon.svg?302lgq#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?176mb6');
+  src:  url('fonts/icomoon.eot?176mb6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?176mb6') format('truetype'),
+    url('fonts/icomoon.woff?176mb6') format('woff'),
+    url('fonts/icomoon.svg?176mb6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,65 +24,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-download:before {
-  content: "\e912";
-}
-.icon-close:before {
-  content: "\e913";
-}
-.icon-files:before {
+.icon-Social-Networks:before {
   content: "\e900";
 }
-.icon-search:before {
-  content: "\e901";
-}
-.icon-video:before {
-  content: "\e902";
-}
-.icon-arrow1:before {
+.icon-files:before {
   content: "\e903";
 }
-.icon-down:before {
+.icon-search:before {
   content: "\e904";
 }
-.icon-emial:before {
+.icon-video:before {
   content: "\e905";
 }
-.icon-fb:before {
+.icon-arrow1:before {
   content: "\e906";
 }
-.icon-feedback:before {
+.icon-down:before {
   content: "\e907";
 }
-.icon-firmwares:before {
+.icon-emial:before {
   content: "\e908";
 }
-.icon-google:before {
+.icon-fb:before {
   content: "\e909";
 }
-.icon-goto:before {
+.icon-feedback:before {
   content: "\e90a";
 }
-.icon-location:before {
+.icon-firmwares:before {
   content: "\e90b";
 }
-.icon-manuals:before {
+.icon-google:before {
   content: "\e90c";
 }
-.icon-product-specification:before {
+.icon-goto:before {
   content: "\e90d";
 }
-.icon-security-code:before {
+.icon-location:before {
   content: "\e90e";
 }
-.icon-share:before {
+.icon-manuals:before {
   content: "\e90f";
 }
-.icon-tel:before {
+.icon-product-specification:before {
   content: "\e910";
 }
-.icon-twitter:before {
+.icon-security-code:before {
   content: "\e911";
+}
+.icon-share:before {
+  content: "\e912";
+}
+.icon-tel:before {
+  content: "\e913";
+}
+.icon-twitter:before {
+  content: "\e914";
+}
+.icon-download:before {
+  content: "\e915";
+}
+.icon-close:before {
+  content: "\e916";
 }
 .icon-youtube:before {
   content: "\e917";
