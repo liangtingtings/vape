@@ -1,0 +1,23 @@
+﻿.guevara-1{width:100%;height:796px;overflow:hidden;background:url(guevara-n1.jpg) no-repeat top center;}
+.guevara-2{width:100%;height:789px;overflow:hidden;background:url(guevara-n2.jpg) no-repeat top center;}
+.guevara-3{width:100%;height:804px;overflow:hidden;background:url(guevara-n3.jpg) no-repeat top center;}
+.guevara-4{width:100%;height:802px;overflow:hidden;background:url(guevara-n4.jpg) no-repeat top center;}
+.guevara-5{width:100%;height:811px;overflow:hidden;background:url(guevara-n5.jpg) no-repeat top center;}
+.guevara-6{width:100%;height:783px;overflow:hidden;background:url(guevara-n6.jpg) no-repeat top center;}
+.guevara-7{width:100%;height:800px;overflow:hidden;background:url(guevara-n7.jpg) no-repeat top center;}
+.guevara-3-1{cursor:pointer;position:absolute;top:250px;left:190px;z-index:2}
+.guevara-3-1-over{top:270px;}
+.guevara-3-2{position:absolute;top:412px;left:190px}
+
+.guevara-3-r1{display:none;position:absolute;top:270px;left:190px;z-index:3}
+.guevara-3-r2{display:none;position:absolute;top:270px;left:190px;z-index:4}
+
+.guevara-3-r2-over{display:none;position:absolute;top:230px;left:190px;z-index:4}
+
+.arrow-1{cursor:pointer;position:absolute;height:200px;top:120px;width:60px;overflow:hidden;left:245px;z-index:10}
+.ow-1{position:absolute;top:-20px;left:20px;opacity:1}
+.ow-1-over{top:80px;opacity:0.1}
+.ow-2{position:absolute;top:-40px;left:20px;opacity:1}
+.ow-2-over{top:120px;opacity:0.1}
+.ow-3{position:absolute;top:-60px;left:20px;opacity:1}
+.ow-3-over{top:140px;opacity:0.1}

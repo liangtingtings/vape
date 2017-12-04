@@ -10,17 +10,17 @@
     <link href="css/web/common.css" type="text/css" rel="stylesheet" />
     <link href="css/web/idangerous.swiper.css" type="text/css" rel="stylesheet" />
     <link href="css/web/icon.css" type="text/css" rel="stylesheet" />
-    <!-- <script type="text/javascript" src="js/web/jquery-3.2.1.min.js"></script> -->
-    <script type="text/javascript" src="js/web/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/web/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="http://test.vapeonly.com/static/js/common/jquery-browser.js?1509675935"></script>
     <script type="text/javascript" src="js/web/idangerous.swiper.min.js"></script>
     <script type="text/javascript" src="js/web/common.js"></script>
 </head>
 <script>
 $(function () {
     $(".product-detail-wrapper").bannerRoll(".swiper-product", ".pagination");
-    $("img").each(function(img){
-        $(this).loadImage();
-    })
+    // $("img").each(function(img){
+    //     $(this).loadImage();
+    // })
         
 })
 </script>
@@ -83,14 +83,117 @@ $(function () {
                 </div>
                 <div class="pagination"></div>
             </div>
-            <div class="wapper-container product-detail">
+            <!-- <div class="wapper-container product-detail">
                 <h1>Odini - Smart security camera</h1>
                 <p>It makes fresh expression by cutting part of frame. impression of "Cut the paper" To the viewer this multi-facedgarner...
                 - JustforFun 2015 - 1 week - Odini is a security cameras which learns to respect your privacy and space while you are at home and he is first, on the scene to monitor and record an event while you are away.</p>
                 <img src="images/web/products/product_detail1.png" alt="">
                 <img src="images/web/products/product_detail2.png" alt="">
                 <img src="images/web/products/product_detail3.png" alt="">
-            </div>
+            </div> -->
+            
+                <link type="text/css" rel="stylesheet" href="images/products/guevara/guevara.css" />
+                <script>
+                    if (!$.browser.msie) {
+
+                        var interval = setInterval(ow, 1600);
+                        function hideow() {
+                            $(".arrow-1").hide();
+                        }
+                        function ow() {
+                            setTimeout(function () {
+                                $(".ow-3").addClass("animation ow-3-over")
+                            }, 400)
+                            setTimeout(function () {
+                                $(".ow-3").attr("class", "ow-3")
+                            }, 1200)
+                            setTimeout(function () {
+                                $(".ow-2").addClass("animation ow-2-over")
+                            }, 600)
+                            setTimeout(function () {
+                                $(".ow-2").attr("class", "ow-2")
+                            }, 1400)
+                            setTimeout(function () {
+                                $(".ow-1").addClass("animation ow-1-over")
+                            }, 800)
+                            setTimeout(function () {
+                                $(".ow-1").attr("class", "ow-1")
+                            }, 1600)
+                        }
+                    }
+
+                    function guevara_1() {
+                        
+                        if($(".guevara-3-r2").hasClass("guevara-3-r2-over")){
+                            setTimeout(function () {
+                                $(".guevara-3-r2").removeClass("guevara-3-r2-over")
+                            }, 1000)
+                            
+                            setTimeout(function () {
+                                $(".guevara-3-r1").show()
+                            }, 2000)
+                            setTimeout(function () {
+                                $(".guevara-3-r2").show()
+                            }, 2000)
+                             setTimeout(function () {
+                                $(".guevara-3-r2").hide()
+                            }, 2000)
+                            setTimeout(function () {
+                                 setTimeout(function () {
+                                $(".guevara-3-r1").hide()
+                            }, 2000)
+                                $(".guevara-3-1").show()
+                            }, 2000)
+                            
+                            
+                        } else {
+                            $(".guevara-3-r1").hide()
+                            $(".guevara-3-r2").hide()
+                            $(".guevara-3-1").addClass("guevara-3-1-over")
+                            setTimeout(function () {
+                                $(".guevara-3-r1").show()
+                            }, 1000)
+                            setTimeout(function () {
+                                $(".guevara-3-r2").show()
+                            }, 2000)
+                            setTimeout(function () {
+                                $(".guevara-3-r1").hide()
+                                $(".guevara-3-1").hide()
+                                $(".guevara-3-r2").addClass("guevara-3-r2-over")
+                                $(".arrow-1").show();
+                            }, 3000)
+                        }
+                        
+                    }
+                    
+
+                </script>
+ 
+
+                <body>
+                    <div class="inner-banner">
+                        <div class="guevara-1 autoheight"></div>
+                        <div class="guevara-2 autoheight"></div>
+                        <div class="guevara-3 autoheight">
+                            <div class="ib-center">
+                                <div onclick="guevara_1();hideow()" class="arrow-1">
+                                    <img style="top:30px\9;opacity:0.5\9" class="ow-1 animation4" src="images/products/guevara/ow-1.png" />
+                                    <img style="top:60px\9;opacity:0.5\9" class="ow-2 animation4" src="images/products/guevara/ow-1.png" />
+                                    <img style="top:90px\9;opacity:0.5\9" class="ow-3 animation4" src="images/products/guevara/ow-1.png" />
+                                </div>
+                                <img onclick="guevara_1();hideow()" class="guevara-3-1 animation" src="images/products/guevara/guevara-3-1.png" />
+                                <img class="guevara-3-2" src="images/products/guevara/guevara-3-2.png" ／>
+                                <img class="guevara-3-r1 animation" src="images/products/guevara/guevara-3-r1.png" ／>
+                                <img class="guevara-3-r2 animation" src="images/products/guevara/guevara-3-r2.png" ／>
+                            </div>
+                        </div>
+                        <div class="guevara-4 autoheight"></div>
+                        <div class="guevara-5 autoheight"></div>
+                        <div class="guevara-6 autoheight"></div>
+                        <div class="guevara-7 autoheight"></div>
+                    </div>
+                </body>
+          
             <div class="wapper">
                 <ul class="wapper-list clearfix">
                     <li class="transition-sp11 active1">
